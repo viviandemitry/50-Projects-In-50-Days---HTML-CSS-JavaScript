@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moli:wght@400;700&display=swap');
+
+:root {
+    --line-border-fill: rgb(21, 144, 192);
+    --line-border-empty: #e0e0e0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(231.79deg, #009cb8 0%, rgba(0, 140, 184, 0) 100%);
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container {
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    width:350px;
+    max-width: 100%;
+    
+}
+
+.progress-container::before {
+    background-color:var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width:100%;
+    transform: translateY(-50%);
+    z-index: -1;
+    
+}
+
+
+.progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width:0%;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.circle {
+    background-color: #8ba09f;
+    color: #e2e2e2;
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: .4 ease;
+    font-size:25px;
+}
+
+.circle.active{
+    border-color: var(--line-border-fill);
+
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    width: 150px;
+    height:50px;
+    font-size: 20px;
+    margin: 5px;
+
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline:0;
+}
+
+.btn:disabled{
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+
+}

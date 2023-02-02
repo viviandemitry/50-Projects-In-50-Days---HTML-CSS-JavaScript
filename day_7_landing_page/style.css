@@ -172,4 +172,19 @@ h1 {
         background-color: var(--left-bg-color);
      
   }
+  .split.right {
+    right: 0;
+    background: url('mimosa.jpeg');
+    background-repeat: no-repeat;
+    
+}
+
+.split.left {
+    left: 0;
+    background: url('betoven2.jpeg');
+    background-repeat: no-repeat;
+    
+}
+
+
 }

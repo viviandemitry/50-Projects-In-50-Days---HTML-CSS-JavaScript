@@ -160,7 +160,7 @@ h1 {
         content:'';
         position: absolute;
         width: 50%;
-        height: 50%;
+        height: 100%;
         background-color: var(--right-bg-color);
     
     }
@@ -168,7 +168,7 @@ h1 {
         content:'';
         position: absolute;
         width: 50%;
-        height: 50%;
+        height: 100%;
         background-color: var(--left-bg-color);
      
   }
@@ -176,6 +176,7 @@ h1 {
     right: 0;
     background: url('mimosa.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -183,6 +184,7 @@ h1 {
     left: 0;
     background: url('betoven2.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
     
 }
 

@@ -17,3 +17,4 @@
 <p align="center">Live Demo > (https://adote-um-amigo-green.vercel.app/) <br></p>
 <p align="center"><img alt="primeira pagina" src="https://github.com/viviandemitry/50-Projects-In-50-Days---HTML-CSS-JavaScript/blob/main/day_7_landing_page/main_display.png"></p>
 <br>
+<br>
